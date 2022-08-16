@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    padding: 10px 0px;
+    text-align: center;
+}
+main{
+  height: 600px;
+  width: 60%;
+  border: 1px solid black;
+  margin: auto;
+  display: flex; flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  
+}
+div{
+    height: 180px;
+    width: 32%;
+    border: 1px solid black;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+}
+
+.a{
+    background-image: url("photo/pic1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.b{
+    background-image: url("photo/pic2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.c{
+    background-image: url("photo/pic3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.d{
+    background-image: url("photo/pic4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.e{
+    background-image: url("photo/pic9.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.f{
+    background-image: url("photo/pic5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.g{
+    background-image: url("photo/pic6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.h{
+    background-image: url("photo/pic7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i{
+    background-image: url("photo/pic8.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+

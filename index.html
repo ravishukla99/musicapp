@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1> My Music Play</h1>
+    <main>
+        <div class="a music">A</div>
+        <div class="b music">B</div>
+        <div class="c music">C</div>
+        <div class="d music">D</div>
+        <div class="e music">E</div>
+        <div class="f music">F</div>
+        <div class="g music">G</div>
+        <div class="h music">H</div>
+        <div class="i music">I</div>
+    </main>
+    <script>
+        var divlength = document.querySelectorAll(".music").length;
+
+        var music1 = new Audio("music/song1.mp3")
+        var music2 = new Audio("music/song2.mp3")
+        var music3 = new Audio("music/song3.mp3")
+        var music4 = new Audio("music/song4.mp3")
+        var music5 = new Audio("music/song5.mp3")
+
+
+        for (var i = 0; i < divlength; i++) {
+            var check = document.querySelectorAll(".music")[i].addEventListener("click", played);
+            var check = document.querySelectorAll(".music")[i].addEventListener("dblclick", pauseso);
+        }
+        function played() {
+            var enjoy = this.innerHTML;
+
+
+            switch (enjoy) {
+                case "A":
+                    music1.play()
+
+                    break;
+
+                case "B":
+                    music2.play()
+                    break;
+
+                case "C":
+                    music3.play()
+
+                    break;
+
+               
+                case "D":
+                    music4.play()
+                    break;
+
+               
+                case "E":
+                    music5.play()
+
+                    break;
+
+                
+                case "F":
+                    music4.play()
+                    break;
+
+                case "G":
+                    music2.play()
+                    break;
+
+              
+                case "H":
+                    music2.play()
+                    break;
+
+               
+                case "I":
+                    music2.play()
+                    break;
+
+                default:
+                    console.log("not work")
+                    break;
+            }
+        }
+
+        function pauseso() {
+            var enjoy = this.innerHTML;
+        
+            switch(enjoy){
+                case "A":
+                    music1.pause()
+
+                    break;
+
+               
+                case "B":
+                    music2.pause()
+                    break;
+
+                
+                case "C":
+                    music3.pause()
+
+                    break;
+
+                
+                case "D":
+                    music4.pause()
+                    break;
+
+               
+                case "E":
+                    music5.pause()
+
+                    break;
+
+               
+                case "F":
+                    music4.pause()
+                    break;
+
+               
+                case "G":
+                    music2.pause()
+                    break;
+
+               
+                case "H":
+                    music2.pause()
+                    break;
+
+                
+                case "I":
+                    music2.pause()
+                    break;
+
+                default:
+                    console.log("not work")
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
